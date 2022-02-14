@@ -48,7 +48,7 @@ class ball {
     this.r = r;
   }
   drawBall = function() {
-    fill(255, 255, 0, 100)
+    fill(255, 0, 255)
     noStroke();
     circle(this.x, this.y, this.r*2)
   }
