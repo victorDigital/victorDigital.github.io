@@ -6,7 +6,10 @@ html, body {
 canvas {
   display: block;
 }
-
+h1 {
+  font-size: 70px;
+  padding-top: 10px;
+}
 .head {
   background: rgb(255, 255, 255); 
   font-size: 27px; 
@@ -72,25 +75,12 @@ canvas {
     "sidebar main main main"
     "sidebar content1 content2 content3"
     "sidebar footer footer footer";
+  padding: 30px;
   grid-gap: 2rem;
   font-weight: 800;
-  text-transform: uppercase;
-  font-size: 12px;
+  font-size: 23px;
   color: #004d40;
   text-align: center;
-}
-
-nav {
-  background: rgb(255, 255, 255); 
-  border: 6px solid rgb(0, 0, 0);
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 10px 10px 0px rgb(136, 136, 136);
-  text-align: center;
-  transition: box-shadow 0.5s;
-  grid-area: nav;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
 }
 
 main {
@@ -176,7 +166,6 @@ a {
   display: block;
   font-family: inherit;
   text-decoration: none;
-  font-weight: bold;
   margin: 1rem;
 }
 
@@ -197,4 +186,84 @@ a {
 
 #sidebar:hover, #content1:hover, #content2:hover, #content3:hover, footer:hover, nav:hover, main:hover {
   box-shadow: 0px 0px 0px rgb(0, 0, 0);
+}
+
+nav {
+  background: rgb(255, 255, 255); 
+  border: 6px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 10px 10px 0px rgb(136, 136, 136);
+  text-align: center;
+  transition: box-shadow 0.5s;
+  grid-area: nav;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #24252a;
+}
+
+
+nav {
+  order: 1;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  font-size: 16px;
+}
+
+.nav__links li {
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.nav__links li:nth-child(1) {
+  padding: 10 20px 0 0;
+  font-size: 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #a900a1;
+}
+
+.cta {
+  order: 2;
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(242, 191, 255,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  justify-content: flex-end;
+  transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: rgba(242, 191, 255,0.8);
 }
