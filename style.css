@@ -9,54 +9,7 @@ canvas {
 h1 {
   font-size: 70px;
   padding-top: 10px;
-}
-.head {
-  background: rgb(255, 255, 255); 
-  font-size: 27px; 
-  margin: 10px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  border: 6px solid rgb(0, 0, 0);
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 7px 7px 00px rgb(228, 118, 255);
-  text-align: center;
-  transition: box-shadow 0.5s;
-}
-.head2 {
-  background: rgb(255, 255, 255); 
-  font-size: 27px; ; 
-  margin: 10px;
-  margin-top: 50px;
-  margin-bottom: 25px;
-  border: 6px solid rgb(0, 0, 0);
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 7px 7px 00px rgb(228, 118, 255);
-  text-align: center;
-  transition: box-shadow 0.5s;
-}
-.para {
-  background: rgb(255, 255, 255); 
-  font-size: 20px; 
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  border: 6px solid rgb(0, 0, 0);
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 10px 10px 0px rgb(136, 136, 136);
-  text-align: center;
-  transition: box-shadow 0.5s;
-}
-
-.para:hover {
-  box-shadow: 0px 0px 0px rgb(0, 0, 0);
-}
-
-.head:hover,.head2:hover {
-  box-shadow: 0px 0px 0px rgb(0, 0, 0);
+  color: #F5F2E7;
 }
 
 :root {
@@ -69,7 +22,7 @@ h1 {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.2fr;
   grid-template-areas:
     "nav nav nav nav"
     "sidebar main main main"
@@ -79,16 +32,16 @@ h1 {
   grid-gap: 2rem;
   font-weight: 800;
   font-size: 23px;
-  color: #004d40;
+  color: #F5F2E7;
   text-align: center;
 }
 
 main {
-  background: rgb(255, 255, 255); 
-  border: 6px solid rgb(0, 0, 0);
+  background: #2C3333; 
+  border: 6px solid #2666CF;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 10px 10px 0px rgb(136, 136, 136);
+  box-shadow: 10px 10px 0px #395B64;
   text-align: center;
   transition: box-shadow 0.5s;
   grid-area: main;
@@ -97,11 +50,11 @@ main {
 }
 
 #sidebar {
-  background: rgb(255, 255, 255); 
-  border: 6px solid rgb(0, 0, 0);
+  background: #2C3333; 
+  border: 6px solid #2666CF;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 10px 10px 0px rgb(136, 136, 136);
+  box-shadow: 10px 10px 0px #395B64;
   text-align: center;
   transition: box-shadow 0.5s;
   grid-area: sidebar;
@@ -110,11 +63,11 @@ main {
 }
 
 #content1 {
-  background: rgb(255, 255, 255); 
-  border: 6px solid rgb(0, 0, 0);
+  background: #2C3333; 
+  border: 6px solid #2666CF;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 10px 10px 0px rgb(136, 136, 136);
+  box-shadow: 10px 10px 0px #395B64;
   text-align: center;
   transition: box-shadow 0.5s;
   grid-area: content1;
@@ -123,11 +76,11 @@ main {
 }
 
 #content2 {
-  background: rgb(255, 255, 255); 
-  border: 6px solid rgb(0, 0, 0);
+  background: #2C3333; 
+  border: 6px solid #2666CF;
   border-radius: 20px;
   padding: 10px;
-  box-shadow: 10px 10px 0px rgb(136, 136, 136);
+  box-shadow: 10px 10px 0px #395B64;
   text-align: center;
   transition: box-shadow 0.5s;
   grid-area: content2;
@@ -136,11 +89,11 @@ main {
 }
 
 #content3 {
-  background: rgb(255, 255, 255); 
-  border: 6px solid rgb(0, 0, 0);
+  background: #2C3333; 
+  border: 6px solid #2666CF;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 10px 10px 0px rgb(136, 136, 136);
+  box-shadow: 10px 10px 0px #395B64;
   text-align: center;
   transition: box-shadow 0.5s;
   grid-area: content3;
@@ -149,11 +102,11 @@ main {
 }
 
 footer {
-  background: rgb(255, 255, 255); 
-  border: 6px solid rgb(0, 0, 0);
+  background: #2C3333; 
+  border: 6px solid #2666CF;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 10px 10px 0px rgb(136, 136, 136);
+  box-shadow: 10px 10px 0px #395B64;
   text-align: center;
   transition: box-shadow 0.5s;
   grid-area: footer;
@@ -172,7 +125,7 @@ a {
 @media only screen and (max-width: 1000px) {
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr 4fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-rows: 0.4fr 0.4fr 4fr 1.2fr 1.2fr 1.2fr 0.3fr;
     grid-template-areas:
       "nav"
       "sidebar"
@@ -185,15 +138,15 @@ a {
 }
 
 #sidebar:hover, #content1:hover, #content2:hover, #content3:hover, footer:hover, nav:hover, main:hover {
-  box-shadow: 0px 0px 0px rgb(0, 0, 0);
+  box-shadow: 0px 0px 0px #2666CF;
 }
 
 nav {
-  background: rgb(255, 255, 255); 
-  border: 6px solid rgb(0, 0, 0);
+  background: #2C3333; 
+  border: 6px solid #2666CF;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 10px 10px 0px rgb(136, 136, 136);
+  box-shadow: 10px 10px 0px #395B64;
   text-align: center;
   transition: box-shadow 0.5s;
   grid-area: nav;
@@ -207,12 +160,15 @@ nav {
   padding: 0;
 }
 
+a {
+  color: #F5F2E7;
+}
+
 header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 30px 10%;
-  background-color: #24252a;
 }
 
 
@@ -221,9 +177,7 @@ nav {
 }
 
 .nav__links a,
-.cta,
 .overlay__content a {
-  color: #000000;
   text-decoration: none;
 }
 
@@ -248,22 +202,24 @@ nav {
 }
 
 .nav__links li a:hover {
-  color: #a900a1;
+  color: rgba(38, 102, 207,1);
 }
 
 .cta {
   order: 2;
   margin-left: 20px;
   padding: 9px 25px;
-  background-color: rgba(242, 191, 255,1);
+  background-color: rgba(38, 102, 207,1);
   border: none;
   border-radius: 50px;
   cursor: pointer;
   font-size: 20px;
   justify-content: flex-end;
+  color: #F5F2E7;
+  text-decoration: none;
   transition: all 0.3s ease 0s;
 }
 
 .cta:hover {
-  background-color: rgba(242, 191, 255,0.8);
+  background-color: rgba(38, 102, 207,0.8);
 }
