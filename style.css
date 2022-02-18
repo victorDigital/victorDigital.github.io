@@ -218,7 +218,6 @@ nav {
   border-radius: 50px;
   cursor: pointer;
   font-size: 20px;
-  justify-content: flex-end;
   color: #F5F2E7;
   text-decoration: none;
   transition: all 0.3s ease 0s;
@@ -247,4 +246,11 @@ nav {
   list-style: none;
   text-align: left;
   margin: 1rem;
+}
+
+.gif{
+  margin: 5px;
+  max-width: 200px;
+  border: 6px solid #2666CF;
+  border-radius: 20px;
 }
