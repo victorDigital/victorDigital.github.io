@@ -9,6 +9,8 @@ canvas {
 h1 {
   font-size: 70px;
   padding-top: 10px;
+  margin-left: 20px;
+  text-align: left;
   color: #F5F2E7;
 }
 
@@ -42,7 +44,7 @@ main {
   border-radius: 10px;
   padding: 10px;
   box-shadow: 10px 10px 0px #191d1d;
-  text-align: center;
+  text-align: left;
   transition: box-shadow 0.5s;
   grid-area: main;
   border-radius: var(--main-radius);
@@ -158,6 +160,7 @@ nav {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 a {
@@ -208,7 +211,8 @@ nav {
 .cta {
   order: 2;
   margin-left: 20px;
-  padding: 9px 25px;
+  margin-top: 20px;
+  padding: 10px 30px;
   background-color: rgba(38, 102, 207,1);
   border: none;
   border-radius: 50px;
@@ -222,4 +226,9 @@ nav {
 
 .cta:hover {
   background-color: rgba(38, 102, 207,0.8);
+}
+.sidebar__links{
+  list-style: none;
+  text-align: left;
+  margin: 1rem;
 }
