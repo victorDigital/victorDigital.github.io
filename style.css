@@ -41,7 +41,7 @@ main {
   border: 6px solid #2666CF;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 10px 10px 0px #395B64;
+  box-shadow: 10px 10px 0px #191d1d;
   text-align: center;
   transition: box-shadow 0.5s;
   grid-area: main;
@@ -54,7 +54,7 @@ main {
   border: 6px solid #2666CF;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 10px 10px 0px #395B64;
+  box-shadow: 10px 10px 0px #191d1d;
   text-align: center;
   transition: box-shadow 0.5s;
   grid-area: sidebar;
@@ -67,7 +67,7 @@ main {
   border: 6px solid #2666CF;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 10px 10px 0px #395B64;
+  box-shadow: 10px 10px 0px #191d1d;
   text-align: center;
   transition: box-shadow 0.5s;
   grid-area: content1;
@@ -80,7 +80,7 @@ main {
   border: 6px solid #2666CF;
   border-radius: 20px;
   padding: 10px;
-  box-shadow: 10px 10px 0px #395B64;
+  box-shadow: 10px 10px 0px #191d1d;
   text-align: center;
   transition: box-shadow 0.5s;
   grid-area: content2;
@@ -93,7 +93,7 @@ main {
   border: 6px solid #2666CF;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 10px 10px 0px #395B64;
+  box-shadow: 10px 10px 0px #191d1d;
   text-align: center;
   transition: box-shadow 0.5s;
   grid-area: content3;
@@ -106,7 +106,7 @@ footer {
   border: 6px solid #2666CF;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 10px 10px 0px #395B64;
+  box-shadow: 10px 10px 0px #191d1d;
   text-align: center;
   transition: box-shadow 0.5s;
   grid-area: footer;
@@ -146,7 +146,7 @@ nav {
   border: 6px solid #2666CF;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 10px 10px 0px #395B64;
+  box-shadow: 10px 10px 0px #191d1d;
   text-align: center;
   transition: box-shadow 0.5s;
   grid-area: nav;
