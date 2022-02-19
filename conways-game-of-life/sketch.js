@@ -89,8 +89,8 @@ function newFrame() {
       if(grid[i-1][j+1] == 1) {amountOfNeighbours++;}
 
       if(grid[i][j] == 1) {
-        if(amountOfNeighbours < 2) {newGrid[i][j] = 0}
-        if(amountOfNeighbours > 3) {newGrid[i][j] = 0}
+        if(amountOfNeighbours <= 1) {newGrid[i][j] = 0}
+        if(amountOfNeighbours >= 4) {newGrid[i][j] = 0}
       }
       if(grid[i][j] == 0) {
         if(amountOfNeighbours == 3) {newGrid[i][j] = 1}
