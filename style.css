@@ -254,3 +254,8 @@ nav {
   border: 6px solid #2666CF;
   border-radius: 20px;
 }
+
+.llogo{
+  max-width: 50px;
+  margin: 5px;
+}
