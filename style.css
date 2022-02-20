@@ -261,7 +261,7 @@ nav {
   border: 0px solid #2666CF;
   border-radius: 10px;
   padding: 5px;
-  transition: 0.3s all ease 0.1s;
+  transition: 0.3s all ease 0s;
 }
 
 .llogo:hover{
