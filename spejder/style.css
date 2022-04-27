@@ -1,0 +1,14 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+* {
+  font-family: Cascadia Mono;
+  word-wrap: break-word;
+  margin: 25px;
+}
