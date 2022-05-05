@@ -43,7 +43,6 @@ function draw() {
   drawPlayer();
   updatePlayer();
   drawWorld();
-  drawBurnedPlaces();
   drawLandingPad()
   fill(0,fade)
   noStroke()
@@ -65,9 +64,6 @@ function drawWorld() {
   fill(52, 173, 76)
   noStroke();
   rect((width*500)/-1, height-70, width*1000, height*1000)
-  for(var i = 0 ; i < grassBlades.length ; i++) {
-    grassBlades[i].drawGrass();
-  }
 }
 
 function drawPlayer() {
