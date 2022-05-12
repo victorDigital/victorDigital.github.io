@@ -27,7 +27,7 @@ function setup() {
   createCanvas(windowWidth,windowHeight);
   stroke(255);
   strokeWeight(10);
-  instantiateBoids(50, boid)
+  instantiateBoids(100, boid)
   instantiateSharks(1, shark)
 }
 
@@ -160,15 +160,6 @@ function updateBoid(_boid) {
 }
 
 function boidBorder(_boid) {
-  stroke(255,0,0);
-  noFill();
-  rect(0,0,width,height);
-  strokeWeight(2);
-  stroke(0,255,0);
-  noFill();
-  rect(0+border,0+border,width -(border*2),height-(border*2));
-  stroke(255);
-  strokeWeight(10);
 
   if(_boid.x <= border) {
     _boid.dx += 1 /2;
@@ -228,15 +219,6 @@ function updateShark(_shark) {
 }
 
 function sharkBorder(_shark) {
-  stroke(255,0,0);
-  noFill();
-  rect(0,0,width,height);
-  strokeWeight(2);
-  stroke(0,255,0);
-  noFill();
-  rect(0+border,0+border,width -(border*2),height-(border*2));
-  stroke(255);
-  strokeWeight(10);
 
   if(_shark.x <= border) {
     _shark.dx += 1 /5;
@@ -279,7 +261,8 @@ function sharkAttack(_shark, _boids) {
     for(let i = 0; i < _boids.length; i++) {
       if(dist(_shark.x, _shark.y, _boids[i].x, _boids[i].y) < 10) {
         print("EAT:" + str(i))
-        boids.splice(i,1);
+        _boids[i].x = random(width);
+        _boids[i].y = random(height);
       }
     }
 
